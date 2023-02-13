@@ -43,5 +43,18 @@
 
 <script>prettyPrint();</script>
 <script src="scripts/linenumber.js"></script>
+<?js if (env.conf.minami.scripts && env.conf.minami.scripts.length) {
+    for(var i = 0; i < env.conf.minami.scripts.length; i++){
+        if (env.conf.minami.scripts[i].indexOf(".css") != -1) {
+    ?>
+    <link type="text/css" rel="stylesheet" href="<?js= env.conf.minami.scripts[i] ?>">
+    <?js
+        } else {
+    ?>
+    <script src="<?js= env.conf.minami.scripts[i] ?>"></script>
+    <?js
+        }
+    }
+} ?>
 </body>
 </html>
