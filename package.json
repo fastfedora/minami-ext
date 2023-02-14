@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nijikokun/minami.git"
+    "url": "https://github.com/fastfedora/minami.git"
   },
   "author": "Nijiko Yonskai <nijikokun@gmail.com>",
   "contributors": [
@@ -24,9 +24,9 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/Nijikokun/minami/issues"
+    "url": "https://github.com/fastfedora/minami/issues"
   },
-  "homepage": "https://github.com/Nijikokun/minami"
+  "homepage": "https://github.com/fastfedora/minami",
   "dependencies": {
     "taffydb": "^2.7.3"
   }
