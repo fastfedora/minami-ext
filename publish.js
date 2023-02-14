@@ -415,7 +415,7 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
           displayName = item.name
         }
 
-        displayName = displayName.replace(/^module:/g, "")
+        displayName = displayName.replace(/module:/g, "")
 
         if (itemHeading === 'Tutorials') {
           nav.push(buildNavItem(linktoFn(item.longname, displayName), 'tutorial'))
