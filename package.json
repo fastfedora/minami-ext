@@ -27,4 +27,7 @@
     "url": "https://github.com/Nijikokun/minami/issues"
   },
   "homepage": "https://github.com/Nijikokun/minami"
+  "dependencies": {
+    "taffydb": "^2.7.3"
+  }
 }
