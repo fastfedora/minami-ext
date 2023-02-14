@@ -365,7 +365,7 @@ function buildNav(members) {
   nav = nav.concat(buildMemberNav(members.interfaces, "Interfaces", seen, linkto))
 
   if (members.globals.length) {
-    nav.push(buildNavHeading(linkto('global', 'Globals')))
+    nav.push(buildNavHeading(linkto('global', 'Globals'), true))
 
     members.globals.forEach(function (item) {
       if (item.kind !== "typedef" && !hasOwnProp.call(seen, item.longname)) {
@@ -388,7 +388,7 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
   if (items && items.length) {
     var itemsNav = ""
 
-    nav.push(buildNavHeading(itemHeading))
+    nav.push(buildNavHeading(itemHeading, true))
 
     items.forEach(function(item) {
       var methods = find({ kind: "function", memberof: item.longname })
@@ -472,9 +472,9 @@ function buildNavLink (linkClass, linkContent) {
  * @param {String} content navigation header content
  * @return {String}
  */
-function buildNavHeading (content) {
+function buildNavHeading (content, isSection) {
   return [
-    '<li class="nav-heading">',
+    `<li class="nav-heading${isSection ? ' nav-section' : ''}">`,
     content,
     '</li>'
   ].join('')
