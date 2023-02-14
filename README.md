@@ -81,6 +81,22 @@ In your `.jsdoc.json` file, add a template option.
 
 Specifying a number for useLongnameInNav it will be the max number of path elements to show in nav (starting from Class).
 
+### Options
+
+This extended version of Minami supports the following options:
+
+```
+{
+  "minami": {
+    // Array of external (or relative local copied using templates.default.staticFiles.include) js or css files to inject into HTML,
+    "scripts": [],
+  }
+}
+```
+
+### Contributors
+
+Thanks to [minami](https://github.com/nijikokun/minami) and [docdash](https://github.com/clenemt/docdash).
 
 ## License
 
